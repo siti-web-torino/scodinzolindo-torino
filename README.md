@@ -1,49 +1,40 @@
-# Lulù Bolle&Coccole — proposta di sito
+# Aggiornamento contenuti, conversione e HTML del 1 novembre 2026
 
-Sito dimostrativo non ufficiale, aggiornato il 1 novembre 2026 per la presentazione al negozio.
+La pagina pubblicata in `index.html`, `dist/index.html` e `docs/index.html` contiene il testo semantico completo. Non richiede JavaScript per leggere presentazione, servizi, recensioni, FAQ e contatti. JavaScript aggiunge configuratore, menu mobile e galleria.
 
-## Contenuti
+## Modifica e compilazione
 
-- Contatti, orari, servizi, FAQ e sintesi delle recensioni: `src/content.js`.
-- Interfaccia e interazioni: `src/main.jsx`.
-- Stile principale e correzioni responsive: `src/style.css`, `src/refinements.css`.
-- Sito compilato: `dist/`.
-- Configurazione interna di Sites gestita separatamente dalla copia GitHub.
+- Contenuti: `src/content.js`.
+- Pagina e componenti: `src/App.jsx`, `src/Booking.jsx`.
+- Attivazione interazioni: `src/main.jsx`.
+- Metadati e struttura documento: `src/document.html`.
+- Stile: `src/style.css`, `src/refinements.css`, `src/animations.css`, `src/booking.css`.
+- Compilazione: `npm ci`, poi `npm run build` con Node 20 o successivo. Il comando genera HTML con React DOM Server, bundle con nomi legati al contenuto e copie per Sites e per l’hosting GitHub esistente.
 
-## Avvio e compilazione
+La configurazione interna Sites è gestita separatamente. Le credenziali temporanee non sono mai incluse nella repository.
 
-Con Node.js 20 o successivo: `npm ci`, poi `npm run build`. Servire `dist/` tramite HTTP.
-Il comando di compilazione funziona su Windows e Linux. Le dipendenze installate non sono versionate.
+## Richiesta WhatsApp
 
-## Correzioni del 1 novembre 2026
+Quattro opzioni per l’animale e cinque trattamenti compongono il messaggio. Il pulsante resta non attivo fino a entrambe le scelte. Apre `https://wa.me/393204861180?text=...`; l’invio e l’appuntamento vengono concordati su WhatsApp. Il sito non registra le selezioni e non invia prenotazioni a un server.
 
-- I contatti principali aprono il telefono tramite `tel:+393204861180`. Il precedente invito a scrivere su WhatsApp portava a un avviso senza contatto diretto.
-- WhatsApp resta disattivato fino alla conferma del negozio. Non è stato aggiunto un sistema di prenotazione.
-- Orari e recapiti riportano Google Maps come fonte.
-- Le vecchie sintesi da una directory, con nomi completi e date non riscontrate direttamente, sono state sostituite con sintesi di tre recensioni lette su Google Maps. Non sono citazioni letterali, non riportano punteggi e usano nomi abbreviati.
-- Menu mobile chiudibile con Esc e clic esterno. La galleria rispetta il filtro e restituisce il focus alla foto di partenza dopo la chiusura.
-- Testi e controlli più leggibili sui telefoni piccoli; nessuno scorrimento orizzontale nei formati verificati.
-- Indicazione visibile della natura dimostrativa del sito e contatti essenziali anche senza JavaScript.
-- Bolle di sapone in apertura, piccole impronte che compaiono in sequenza e microanimazioni sulle schede. I movimenti iniziali terminano entro cinque secondi e rispettano `prefers-reduced-motion`.
-- File compilati con nomi legati al contenuto per evitare versioni precedenti nella cache. Percorsi relativi e copia `docs/` compatibili con l’hosting già presente nella repository GitHub.
+WhatsApp è attivato su richiesta esplicita dell’utente. I sei nuovi servizi e il metodo Zero Stress riprendono i testi e le informazioni forniti dall’utente in questa revisione.
 
-## Fonti
+## SEO e immagini
 
-[Google Maps](https://maps.app.goo.gl/vseyC8BnQ2AJwHuL9), consultato il 1 novembre 2026: indirizzo, telefono, orari e recensioni di Emanuela Hulpasu, Jennylou Pistorale e Rosaria Anna Ganci. Le sintesi conservano il senso dei testi osservati; non ricostruiscono date.
+Title, description, canonical, Open Graph e Twitter Card sono nell’HTML iniziale. L’immagine `public/assets/og-lulu.jpg` misura 1200 × 630 px e usa la fotografia già presente nel progetto. Il JSON-LD descrive LocalBusiness, indirizzo, telefono, aree servite, orari, servizi e FAQ. Non promette stelle nei risultati di ricerca.
 
-Le foto presenti sono immagini illustrative Unsplash già incluse nel progetto. Non rappresentano il negozio, i suoi clienti o i risultati dei trattamenti. Marchio tipografico e palette sono proposte. Prima della versione ufficiale servono conferma di servizi e contenuti, foto e logo autorizzati, dati dell’attività e documenti definitivi.
+Il precedente `noindex,nofollow` della demo è preservato: l’ottimizzazione tecnica non equivale all’approvazione della versione ufficiale o all’abilitazione dell’indicizzazione.
 
-Gli indirizzi delle immagini originali sono conservati in `ASSETS.md`.
+La nota dimostrativa compare una volta nel footer. I badge ripetuti sopra foto e sezioni sono rimossi. Gli alt conservano la natura illustrativa delle immagini. Fonti delle immagini in `ASSETS.md`.
+
+## Recensioni
+
+Le tre sintesi di Emanuela H., Jennylou P. e Rosaria Anna G. sono preservate senza modifiche. Il badge riporta **4,9 su 30 recensioni**, come verificato su Google Maps il 1 novembre 2026, invece del 5,0 richiesto ma non riscontrato sulla scheda.
 
 ## Verifiche
 
-- Compilazione di produzione completata.
-- Anteprima HTTP funzionante e controlli nel browser a 320, 390, 768 e 1280 px: nessun overflow orizzontale o immagine non caricata.
-- Verificati menu mobile con Esc, filtri della galleria, navigazione con frecce, chiusura con ritorno del focus, FAQ, collegamenti telefonici e caricamento della mappa su richiesta.
-- Nessuna telefonata, prenotazione o richiesta reale è stata effettuata durante i controlli.
-
-## Pubblicazione
-
-Demo aggiornata: https://lulu-bolle-coccole-torino.modestknoll65.chatgpt.site/
-
-Il workflow GitHub Pages esistente resta invariato. La compilazione produce `dist/` e una copia `docs/`, con percorsi relativi e nomi dei bundle legati al contenuto.
+- HTML iniziale completo: un main, un H1, sei servizi, tre recensioni, sei FAQ.
+- Tutte le 20 combinazioni del messaggio WhatsApp e codifica dei caratteri verificate.
+- Pagina provata senza il modulo JavaScript: contenuti visibili e FAQ native funzionanti.
+- Configuratore verificato nel browser: due scelte necessarie, riepilogo e collegamento aggiornati al cambio delle opzioni. Nessun messaggio reale inviato.
+- Controlli responsive, galleria, menu e confronto con la versione pubblicata eseguiti prima della consegna.
