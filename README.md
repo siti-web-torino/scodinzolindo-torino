@@ -1,86 +1,49 @@
-# Lulù Bolle&Coccole
+# Lulù Bolle&Coccole — proposta di sito
 
-Sito vetrina per una toelettatura cani e gatti a Torino. Realizzato con React 19 e Tailwind CSS 4; compilazione con esbuild. Nessun backend, sistema di prenotazione, login o pagamento.
+Sito dimostrativo non ufficiale, aggiornato il 1 novembre 2026 per la presentazione al negozio.
 
-## Contenuto
+## Contenuti
 
-- `src/main.jsx`: interfaccia e interazioni.
-- `src/content.js`: contatti, stato WhatsApp, servizi e FAQ.
-- `src/style.css`: stili e responsive.
-- `public/`: immagini e favicon.
-- `dist/`: versione già compilata e pronta per un hosting statico.
-- `index.html`: metadata e dati strutturati.
-- `build.mjs`: compilazione.
-- `package-lock.json`: versioni delle dipendenze per installazione riproducibile.
+- Contatti, orari, servizi, FAQ e sintesi delle recensioni: `src/content.js`.
+- Interfaccia e interazioni: `src/main.jsx`.
+- Stile principale e correzioni responsive: `src/style.css`, `src/refinements.css`.
+- Sito compilato: `dist/`.
+- Configurazione interna di Sites gestita separatamente dalla copia GitHub.
 
-Non sono incluse dipendenze scaricabili (`node_modules`), cronologia Git, credenziali o configurazione dell’hosting Sites. Questo ZIP è una copia autonoma del codice e del sito compilato.
+## Avvio e compilazione
 
-## Avvio locale
+Con Node.js 20 o successivo: `npm ci`, poi `npm run build`. Servire `dist/` tramite HTTP.
+Il comando di compilazione funziona su Windows e Linux. Le dipendenze installate non sono versionate.
 
-Installa Node.js 20 o successivo e, dalla cartella del progetto:
+## Correzioni del 1 novembre 2026
 
-```bash
-npm ci
-npm run build
-python3 -m http.server 8080 --directory dist
-```
+- I contatti principali aprono il telefono tramite `tel:+393204861180`. Il precedente invito a scrivere su WhatsApp portava a un avviso senza contatto diretto.
+- WhatsApp resta disattivato fino alla conferma del negozio. Non è stato aggiunto un sistema di prenotazione.
+- Orari e recapiti riportano Google Maps come fonte.
+- Le vecchie sintesi da una directory, con nomi completi e date non riscontrate direttamente, sono state sostituite con sintesi di tre recensioni lette su Google Maps. Non sono citazioni letterali, non riportano punteggi e usano nomi abbreviati.
+- Menu mobile chiudibile con Esc e clic esterno. La galleria rispetta il filtro e restituisce il focus alla foto di partenza dopo la chiusura.
+- Testi e controlli più leggibili sui telefoni piccoli; nessuno scorrimento orizzontale nei formati verificati.
+- Indicazione visibile della natura dimostrativa del sito e contatti essenziali anche senza JavaScript.
+- Bolle di sapone in apertura, piccole impronte che compaiono in sequenza e microanimazioni sulle schede. I movimenti iniziali terminano entro cinque secondi e rispettano `prefers-reduced-motion`.
+- File compilati con nomi legati al contenuto per evitare versioni precedenti nella cache. Percorsi relativi e copia `docs/` compatibili con l’hosting già presente nella repository GitHub.
 
-Apri http://localhost:8080. Per visualizzare subito la copia compilata, puoi eseguire soltanto il comando Python. Non aprire index.html con doppio clic: usa un server HTTP.
+## Fonti
 
-## Backup su GitHub
+[Google Maps](https://maps.app.goo.gl/vseyC8BnQ2AJwHuL9), consultato il 1 novembre 2026: indirizzo, telefono, orari e recensioni di Emanuela Hulpasu, Jennylou Pistorale e Rosaria Anna Ganci. Le sintesi conservano il senso dei testi osservati; non ricostruiscono date.
 
-1. Crea un repository vuoto sul tuo account GitHub.
-2. Estrai lo ZIP e carica il contenuto della cartella `lulu-bolle-coccole`, mantenendo la struttura.
-3. Includi anche `.gitignore`. Non aggiungere `node_modules`, file `.env` o credenziali.
+Le foto presenti sono immagini illustrative Unsplash già incluse nel progetto. Non rappresentano il negozio, i suoi clienti o i risultati dei trattamenti. Marchio tipografico e palette sono proposte. Prima della versione ufficiale servono conferma di servizi e contenuti, foto e logo autorizzati, dati dell’attività e documenti definitivi.
 
-In alternativa, dalla cartella estratta:
+Gli indirizzi delle immagini originali sono conservati in `ASSETS.md`.
 
-```bash
-git init
-git add .
-git commit -m "Sito Lulù Bolle e Coccole"
-git branch -M main
-git remote add origin https://github.com/TUO-UTENTE/TUO-REPOSITORY.git
-git push -u origin main
-```
+## Verifiche
 
-Sostituisci l’URL con quello del tuo repository. Il caricamento su GitHub conserva il codice: non attiva automaticamente l’hosting.
+- Compilazione di produzione completata.
+- Anteprima HTTP funzionante e controlli nel browser a 320, 390, 768 e 1280 px: nessun overflow orizzontale o immagine non caricata.
+- Verificati menu mobile con Esc, filtri della galleria, navigazione con frecce, chiusura con ritorno del focus, FAQ, collegamenti telefonici e caricamento della mappa su richiesta.
+- Nessuna telefonata, prenotazione o richiesta reale è stata effettuata durante i controlli.
 
-## Pubblicazione indipendente
+## Pubblicazione
 
-Usa un hosting statico con comando di build `npm ci && npm run build` e cartella pubblica `dist`.
+Demo aggiornata: https://lulu-bolle-coccole-torino.modestknoll65.chatgpt.site/
 
-I percorsi delle risorse sono relativi e supportano GitHub Pages sotto il percorso della repository. Il workflow GitHub Actions pubblica la cartella `dist`.
-
-Prima di cambiare dominio aggiorna in `index.html` i valori Open Graph `og:url` e `og:image`. La versione attuale contiene `noindex,nofollow`: rimuovilo solo quando i contenuti sono approvati e vuoi consentire l’indicizzazione.
-
-## WhatsApp
-
-In `src/content.js`, `whatsappVerified` è impostato su `false`. Tutte le CTA commerciali mostrano un avviso finché il numero non viene confermato dall’attività. Dopo conferma ufficiale imposta `true` e ricompila: si aprirà https://wa.me/393204861180 senza messaggi precompilati.
-
-## Informazioni da confermare
-
-- Logo, colori originali, insegna, foto degli interni e profili social ufficiali.
-- Disponibilità dei servizi, soprattutto taglio e riassetto, e orari.
-- Abilitazione WhatsApp del numero +39 320 486 1180.
-- Dati fiscali e informativa privacy definitiva per l’hosting scelto.
-- Le recensioni sono trascritte dagli screenshot Google forniti dall’utente. I cognomi sono abbreviati e non sono state dedotte date. Il nome profilo «jigyasa yoga» è mantenuto così come mostrato.
-
-Le fotografie sono illustrative e non rappresentano clienti, ambienti o risultati dell’attività. Il marchio tipografico e la palette sono proposte provvisorie.
-
-## Fonti e immagini
-
-- Google Maps fornito: https://maps.app.goo.gl/vseyC8BnQ2AJwHuL9
-- Contatti e orari: https://firmania.it/torino/lul%C3%B9-bollecoccole-5438023
-- Recensioni: screenshot della scheda Google forniti dall’utente; gli screenshot non sono inclusi nel sito o nella repository.
-- Immagini illustrative: Unsplash, identificate nel file `ASSETS.md`.
-
-Non è concessa con questo archivio alcuna esclusiva sulle fotografie o sui marchi dell’attività. Sostituisci le fotografie con materiali originali autorizzati prima della consegna definitiva se richiesto dal cliente.
-
-## GitHub Pages
-
-Il sito viene pubblicato dal workflow `.github/workflows/deploy-pages.yml`. In Settings → Pages mantieni selezionato **GitHub Actions**.
-
-Ogni push su `main` avvia installazione delle dipendenze, compilazione React/Tailwind e pubblicazione su Pages. Puoi anche avviare il workflow dalla scheda Actions tramite Run workflow. Non occorre caricare manualmente i file compilati. La cartella `docs` resta una copia compilata utilizzabile come alternativa.
-
-Indirizzo del sito: https://biscoooo.github.io/Lulu-Bolle-Coccole-/
+Il workflow GitHub Pages esistente resta invariato. La compilazione produce `dist/` e una copia `docs/`, con percorsi relativi e nomi dei bundle legati al contenuto.

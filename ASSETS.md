@@ -1,6 +1,6 @@
 # Immagini illustrative
 
-File presenti in `public/assets/` e nella copia compilata `dist/assets/`. Non attribuirle al negozio.
+File presenti in `public/assets/` e nelle copie compilate. Non attribuirle al negozio.
 
 - `hero.jpg`: https://images.unsplash.com/photo-1552053831-71594a27632d
 - `dog.jpg`: https://images.unsplash.com/photo-1583337130417-3346a1be7dee
