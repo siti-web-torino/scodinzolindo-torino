@@ -14,7 +14,7 @@ export default function Booking({Icon}){
       </div>
       <div className="booking-layout">
         <div className="booking-choices">
-          <fieldset><legend><span>01</span> Chi porti da Lulù?</legend><div className="booking-chips">{petOptions.map(option=><button type="button" key={option} aria-pressed={pet===option} onClick={()=>setPet(option)}><Icon name="paw" size={19}/>{option}</button>)}</div></fieldset>
+          <fieldset><legend><span>01</span> Chi porti da Marta?</legend><div className="booking-chips">{petOptions.map(option=><button type="button" key={option} aria-pressed={pet===option} onClick={()=>setPet(option)}><Icon name="paw" size={19}/>{option}</button>)}</div></fieldset>
           <fieldset><legend><span>02</span> Di cosa ha bisogno?</legend><div className="booking-chips">{treatmentOptions.map(option=><button type="button" key={option} aria-pressed={treatment===option} onClick={()=>setTreatment(option)}>{option}</button>)}</div></fieldset>
         </div>
         <div className="booking-summary">

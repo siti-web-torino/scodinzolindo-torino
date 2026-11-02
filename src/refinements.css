@@ -1,5 +1,5 @@
 /* Presentation fixes shared by the demo on desktop and mobile. */
-.demo-banner{padding:9px 20px;text-align:center;background:#453d38;color:#fff9f1;font-size:12px;line-height:1.5}
+.demo-banner{padding:9px 20px;text-align:center;background:#292827;color:#faf8f4;font-size:12px;line-height:1.5}
 .contact-phone{display:inline-block}
 .address:hover,.contact-phone:hover,.hours small a:hover{text-decoration:underline}
 .hours small a{text-decoration:underline;text-underline-offset:3px}
@@ -16,7 +16,7 @@
 .footer-bottom>div{gap:20px;flex-wrap:wrap}
 .lightbox-controls button:disabled{opacity:.35;cursor:default}
 .gallery-photo>span{font-size:12px}
-.floating:focus-visible{outline:3px solid #453d38;outline-offset:4px}
+.floating:focus-visible{outline:3px solid #292827;outline-offset:4px}
 @media(max-width:800px){
   :root{scroll-padding-top:95px}
   .hamburger{display:grid;place-items:center;flex-shrink:0}
@@ -55,3 +55,13 @@
   .hours dl>div{font-size:11px}
   .gallery-photo>span{font-size:11px}
 }
+
+/* Scodinzolindo: charcoal, ivory and warm wood tones from the Facebook cover. */
+.brand{gap:10px}.brand-mark{display:grid;place-items:center;border-color:#a2988a;color:#292827;background:#f1eeea}
+.brand strong{font-size:29px;letter-spacing:-.8px}.brand>span>span{font-size:7px;letter-spacing:1.6px}
+nav{gap:20px}.nav-wrap{gap:20px}.hero h1{font-size:clamp(49px,4.8vw,72px);letter-spacing:-2px}.hero h1 em{white-space:normal}
+.hours p{font-size:14px;margin-top:12px;max-width:430px}.hero-sub{font-size:25px}
+@media(max-width:1150px){.brand strong{font-size:27px}.hero h1{font-size:58px}}
+@media(max-width:800px){.brand strong{font-size:26px}.hero h1{font-size:44px}.hero-sub{font-size:19px}.brand>span>span{font-size:6.5px;letter-spacing:1.25px}}
+@media(max-width:560px){.hero h1{font-size:clamp(43px,12.5vw,58px);line-height:1.07}.hero-sub{font-size:21px}.brand strong{font-size:27px}.brand-mark{width:38px;height:38px}.brand{gap:8px}.map-pin strong{font-size:22px;text-align:center;max-width:90%}}
+@media(max-width:360px){.brand strong{font-size:23px}.brand>span>span{font-size:6px}.brand-mark{width:34px;height:34px}.hero h1{font-size:43px}}

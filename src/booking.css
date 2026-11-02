@@ -3,23 +3,23 @@
 .service-content h3{font-size:25px}
 .service-content p{line-height:1.8;margin-bottom:20px}
 .service-content .text-link{margin-top:auto;padding-top:18px}
-.booking{background:#e8eddf;position:relative}
+.booking{background:#ece7df;position:relative}
 .booking-heading{max-width:750px;margin-bottom:44px}
 .booking-heading>p{max-width:600px;margin-top:22px;font-size:15px}
 .booking-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:55px;align-items:start}
 .booking-choices{display:grid;gap:35px}
 .booking fieldset{border:0;padding:0;margin:0;min-width:0}
 .booking legend{font-family:Georgia,serif;font-size:25px;margin-bottom:18px;line-height:1.4}
-.booking legend>span{font:12px Arial,sans-serif;letter-spacing:1px;display:inline-grid;place-items:center;border:1px solid #a6b5a1;border-radius:50%;height:33px;width:33px;margin-right:10px;vertical-align:middle}
+.booking legend>span{font:12px Arial,sans-serif;letter-spacing:1px;display:inline-grid;place-items:center;border:1px solid #b8ad9f;border-radius:50%;height:33px;width:33px;margin-right:10px;vertical-align:middle}
 .booking-chips{display:flex;gap:10px;flex-wrap:wrap}
-.booking-chips button{display:inline-flex;align-items:center;justify-content:flex-start;gap:9px;min-height:48px;border:1px solid #aebca6;border-radius:24px;padding:12px 17px;background:#fff9f1;color:#453d38;text-align:left;font-size:13px;line-height:1.5;transition:background .2s,border-color .2s,transform .2s}
-.booking-chips button[aria-pressed=true]{background:#453d38;color:#fff9f1;border-color:#453d38}
-.booking-chips button:hover{transform:translateY(-2px);border-color:#52715d}
-.booking-summary{background:#fff9f1;border-radius:14px;padding:30px;border:1px solid #d2d9c8}
+.booking-chips button{display:inline-flex;align-items:center;justify-content:flex-start;gap:9px;min-height:48px;border:1px solid #bcb2a5;border-radius:24px;padding:12px 17px;background:#faf8f4;color:#292827;text-align:left;font-size:13px;line-height:1.5;transition:background .2s,border-color .2s,transform .2s}
+.booking-chips button[aria-pressed=true]{background:#292827;color:#faf8f4;border-color:#292827}
+.booking-chips button:hover{transform:translateY(-2px);border-color:#62584d}
+.booking-summary{background:#faf8f4;border-radius:14px;padding:30px;border:1px solid #d6cdc0}
 .booking-summary .eyebrow{margin-bottom:16px}
 .booking-summary h3{font-size:30px}
 .booking-selection{padding:17px 0;margin:5px 0 10px;border-bottom:1px solid #e2dfd1}
-.booking-selection p{font-size:15px;line-height:1.8;color:#453d38}
+.booking-selection p{font-size:15px;line-height:1.8;color:#292827}
 .booking-selection strong{font-weight:500}
 .message-preview{font-size:13px;line-height:1.8;margin:12px 0 20px}
 .booking-send{width:100%;border-radius:25px;font-size:13px;line-height:1.5;white-space:normal;text-align:center;padding:16px 18px;min-height:56px}
@@ -29,10 +29,10 @@
 .booking-nojs{margin-top:20px}
 .js-ready .booking-nojs{display:none}
 .booking-nojs a,.faq details p a{text-decoration:underline;text-underline-offset:3px}
-.rating-badge{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:24px;padding:13px 20px;border:1px solid #c9d2be;border-radius:30px;background:#edf0e5;font-size:14px;min-height:48px}
-.rating-badge>span{color:#6d7648;font-size:21px}
-.rating-badge strong{font-size:18px;font-weight:500;color:#453d38}
-.rating-badge small{font-size:12px;color:#62594e;padding-left:9px;border-left:1px solid #c1c9b6}
+.rating-badge{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:24px;padding:13px 20px;border:1px solid #d1c7b9;border-radius:30px;background:#efe9e0;font-size:14px;min-height:48px}
+.rating-badge>span{color:#8c744a;font-size:21px}
+.rating-badge strong{font-size:18px;font-weight:500;color:#292827}
+.rating-badge small{font-size:12px;color:#62594e;padding-left:9px;border-left:1px solid #c9c0b4}
 .local-copy{font-size:14px;line-height:1.8;margin:16px 0;max-width:470px}
 .demo-note{font-size:12px;line-height:1.9;padding-bottom:25px;color:#6b5e54;max-width:1240px}
 .review-grid article{display:flex;flex-direction:column}

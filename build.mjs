@@ -21,14 +21,13 @@ const {default:App}=await import(pathToFileURL(ssrPath).href);
 const semanticHtml=renderToString(createElement(App));
 const localBusiness={
   '@context':'https://schema.org','@type':'LocalBusiness',
-  '@id':'https://lulu-bolle-coccole-torino.modestknoll65.chatgpt.site/#negozio',
-  name:business.name,description:'Toelettatura cani e gatti in Via Testona 4, Torino, zona Lingotto e Nizza Millefonti.',
-  url:'https://lulu-bolle-coccole-torino.modestknoll65.chatgpt.site/',telephone:'+393204861180',
-  image:'https://lulu-bolle-coccole-torino.modestknoll65.chatgpt.site/assets/og-lulu.jpg',
-  address:{'@type':'PostalAddress',streetAddress:'Via Testona 4',postalCode:'10127',addressLocality:'Torino',addressRegion:'TO',addressCountry:'IT'},
-  geo:{'@type':'GeoCoordinates',latitude:45.0198676,longitude:7.6628661},hasMap:business.maps,
-  areaServed:['Torino Sud','Lingotto','Nizza Millefonti','Piazza Bengasi'],
-  openingHours:['Mo,Tu 09:00-19:30','We 15:30-19:30','Th,Fr,Sa 09:00-19:30'],
+  '@id':business.siteUrl+'#negozio',
+  name:business.name,description:'Scodinzolindo di Marta Negri, toelettatura in Via Valentino Carrera 5 a Torino.',
+  url:business.siteUrl,telephone:business.phoneHref.slice(4),
+  image:business.siteUrl+'assets/hero.jpg',sameAs:[business.facebook],
+  address:{'@type':'PostalAddress',streetAddress:business.street,postalCode:business.postalCode,addressLocality:'Torino',addressRegion:'TO',addressCountry:'IT'},
+  geo:{'@type':'GeoCoordinates',latitude:business.latitude,longitude:business.longitude},hasMap:business.maps,
+  areaServed:['Torino'],
   hasOfferCatalog:{'@type':'OfferCatalog',name:'Piccoli rituali di benessere',itemListElement:services.map(([name,description])=>({'@type':'Offer',itemOffered:{'@type':'Service',name,description}}))}
 };
 const faqPage={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))};

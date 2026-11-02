@@ -1,27 +1,37 @@
-// Recapito, indirizzo e orari letti direttamente su Google Maps il 1 novembre 2026.
-// WhatsApp attivato su richiesta esplicita dell’utente il 1 novembre 2026.
-export const business={name:'Lulù Bolle&Coccole',phone:'+39 320 486 1180',phoneHref:'tel:+393204861180',address:'Via Testona 4, 10127 Torino TO',whatsappVerified:true,whatsapp:'https://wa.me/393204861180',maps:'https://maps.app.goo.gl/vseyC8BnQ2AJwHuL9',rating:'4,9',reviewCount:30,verifiedOn:'1 novembre 2026',hours:[['Lunedì e martedì','09:00 – 19:30'],['Mercoledì','15:30 – 19:30'],['Giovedì, venerdì e sabato','09:00 – 19:30'],['Domenica','Chiuso']]};
+// Scheda Google Maps e profilo Facebook consultati il 2 novembre 2026.
+// Gli orari non sono indicati su Maps: non vengono ricavati da directory discordanti.
+export const business={
+  name:'Scodinzolindo di Marta Negri',shortName:'Scodinzolindo',
+  phone:'+39 348 785 4716',phoneHref:'tel:+393487854716',
+  address:'Via Valentino Carrera 5, 10146 Torino TO',street:'Via Valentino Carrera 5',postalCode:'10146',
+  whatsapp:'https://wa.me/393487854716',whatsappVerified:true,
+  maps:'https://maps.app.goo.gl/nLjqwgL1zv3qrfRs5?g_st=ic',
+  facebook:'https://www.facebook.com/scodinzolindodinegrimarta/',
+  siteUrl:'https://scodinzolindo-torino.modestknoll65.chatgpt.site/',
+  latitude:45.0797739,longitude:7.6369223,
+  rating:'4,4',reviewCount:62,verifiedOn:'2 novembre 2026',hours:[]
+};
 export const services=[
-['Bagno Dermocosmetico e Asciugatura Dolce','Prodotti delicati scelti in base al pH e al tipo di mantello, con asciugatura a temperatura controllata e senza mai usare gabbie chiuse.','care','water'],
-['Taglio a Forbice, Tosatura e Styling','Tagli personalizzati per valorizzare ogni musetto, con particolare cura per manti ricci e lunghi (Barboncini, Maltipoo, Maltesi, Shih Tzu, Yorkshire).','pup','scissors'],
-['Slanatura, Stripping e Cura Sottopelo','Rimozione delicata del pelo morto e dei nodi per far respirare la cute, ideale per manti voluminosi e doppi (Volpini di Pomerania, Chow Chow, Golden Retriever).','dog','comb'],
-['Toelettatura Delicata per Gatti','Un approccio silenzioso, paziente e rispettoso dei tempi felini per spazzolatura, rimozione nodi, bagno e taglio unghie dei gatti.','cat','paw'],
-['Prima Toelettatura Cuccioli & Cani Ansiosi','Percorso di avvicinamento gentile per abituare i cuccioli o rassicurare gli animali più timorosi ai suoni e al contatto, passo dopo passo.','happy','heart'],
-['Igiene Completa e Piccoli Rituali','Cura delle unghie, pulizia delicata di orecchie e contorno occhi, rasatura igienica dei polpastrelli e pulizia delle pieghe cutanee.','hero','spark']];
-// Sintesi di recensioni lette direttamente su Google Maps, non citazioni.
-// Nomi abbreviati; nessuna data o valutazione ricostruita.
+['Bagno e Asciugatura','Una pausa di freschezza per il tuo amico. Raccontaci le esigenze del suo mantello per scegliere insieme il trattamento.','care','water'],
+['Taglio e Riassetto','Un look curato, dal musetto alle zampe. Chiedi a Marta quale taglio è più adatto al pelo e alle abitudini del tuo cane.','pup','scissors'],
+['Spazzolatura e Cura del Mantello','Nodi e sottopelo richiedono attenzioni diverse. Parliamone insieme per valutare la cura più adatta.','dog','comb'],
+['Attenzioni per i Gatti','Anche il mantello felino ha le sue esigenze. Contattaci per conoscere disponibilità e modalità per il tuo gatto.','cat','paw'],
+['Cuccioli e Prime Esperienze','La prima volta si prepara insieme. Racconta a Marta il carattere, le abitudini e le sensibilità del tuo cucciolo.','happy','heart'],
+['Unghie e Piccoli Gesti di Igiene','Dalle unghie alla pulizia delle orecchie: chiedici informazioni sulle attenzioni da abbinare alla toelettatura.','hero','spark']];
+// Sintesi, non citazioni: recensioni di Scodinzolindo lette su Google Maps.
+// Nomi con iniziale del cognome; nessuna recensione del progetto precedente.
 export const reviews=[
-{theme:'Gentilezza',author:'Emanuela H.',text:'Emanuela racconta la prima toelettatura del suo chow chow, apprezzando la gentilezza e la competenza del personale.'},
-{theme:'Delicatezza',author:'Jennylou P.',text:'Jennylou descrive la cura delicata riservata a Coco, la sua volpina di Pomerania, e si dice molto soddisfatta del risultato.'},
-{theme:'Attenzione',author:'Rosaria Anna G.',text:'Rosaria Anna racconta che il suo maltipoo ansioso è stato rassicurato durante il trattamento e ha ricevuto un bel taglio.'}];
+{theme:'Dolcezza',author:'Lavinia G.',text:'Lavinia descrive Marta come dolce, gentile e disponibile. Racconta di averle affidato per la prima volta Sakura per il bagno e alcune cure di igiene.'},
+{theme:'Professionalità',author:'Marzia P.',text:'Marzia è arrivata da Marta grazie al consiglio di una vicina. Apprezza la gentilezza, la dolcezza e la professionalità riservate al suo cagnolino Winnie e desidera tornare.'},
+{theme:'Fiducia',author:'Gabriele A.',text:'Gabriele porta da anni il suo pastore svizzero da Scodinzolindo. Racconta di trovarsi sempre molto bene e sottolinea la gentilezza e la professionalità del servizio.'}];
 export const faqs=[
-['Posso portare il mio gatto?','Certo, anche i gatti meritano una coccola su misura. Raccontaci come vive la spazzolatura e il contatto: valuteremo insieme il trattamento e i tempi più adatti, con pazienza e rispetto delle sue abitudini. Scrivici su WhatsApp o chiamaci al +39 320 486 1180 prima di passare.'],
-['Come scelgo il trattamento giusto?','Non devi saperlo già: siamo qui per aiutarti. Taglia, tipo di pelo, nodi e abitudini del tuo amico ci aiutano a capire da dove iniziare. Usa il configuratore WhatsApp per indicarci chi porti e cosa stai cercando, oppure chiamaci al +39 320 486 1180: ne parliamo insieme.'],
-['Come posso prenotare una coccola?','Scegli il tuo animale e il trattamento nel configuratore, poi apri WhatsApp: troverai un messaggio già pronto, che puoi completare e inviare quando vuoi. Il negozio ti risponderà per concordare disponibilità e appuntamento. Se preferisci parlare a voce, chiama il +39 320 486 1180.'],
-['Quanto dura e quanto costa una toelettatura?','Ogni mantello ha la sua storia. Durata e costo dipendono da taglia, pelo, condizioni del mantello e trattamento richiesto. Scrivici su WhatsApp, anche raccontandoci le esigenze del tuo amico, oppure chiama il +39 320 486 1180: ti aiutiamo a capire come organizzarti.'],
-['Il mio cane è cucciolo o molto ansioso: come lo accogliete?','Partiamo dalla conoscenza, con calma. Dicci se è la sua prima volta, quali suoni lo preoccupano e cosa lo tranquillizza: potremo concordare un avvicinamento graduale e rispettoso dei suoi tempi. Prima dell’appuntamento scrivici su WhatsApp o chiamaci al +39 320 486 1180, così ci prepariamo ad accoglierlo.'],
-['Dove siete e come vi raggiungo?','Ci trovi in Via Testona 4, a Torino, nella zona Lingotto e Nizza Millefonti, vicino a piazza Bengasi. Puoi raggiungerci anche dalle fermate della metro Lingotto o Bengasi. Apri le indicazioni Google Maps nei contatti e, se hai bisogno di una mano, scrivici su WhatsApp o chiama il +39 320 486 1180.']];
+['Posso portare il mio gatto?','Contattaci prima di passare: racconta a Marta le abitudini del tuo gatto e come vive la spazzolatura, così potrai conoscere disponibilità e modalità del servizio.'],
+['Come scelgo il trattamento giusto?','Taglia, tipo di pelo, nodi e abitudini del tuo amico aiutano a capire da dove iniziare. Scegli un trattamento nel configuratore WhatsApp, oppure chiedi direttamente un consiglio a Marta.'],
+['Come posso chiedere un appuntamento?','Scegli il tuo animale e il trattamento nel configuratore, poi apri WhatsApp: troverai un messaggio già pronto da completare e inviare. Disponibilità e appuntamento si concordano direttamente con Marta.'],
+['Quanto dura e quanto costa una toelettatura?','Durata e costo dipendono dalla taglia, dal tipo di pelo, dalle condizioni del mantello e dal trattamento richiesto. Raccontaci le esigenze del tuo amico per chiedere un preventivo e organizzarti.'],
+['Il mio cane è cucciolo o molto timido: cosa devo sapere?','Dillo a Marta prima dell’appuntamento. Racconta se è la sua prima volta, quali suoni lo preoccupano e cosa lo tranquillizza, così potrete valutare insieme come affrontare la toelettatura.'],
+['Dove siete e quali sono gli orari?','Scodinzolindo di Marta Negri si trova in Via Valentino Carrera 5, 10146 Torino. Apri le indicazioni Google Maps nella sezione contatti. Per conoscere gli orari e le disponibilità aggiornate, scrivici o chiamaci.']];
 export const petOptions=['Cane Taglia Piccola','Cane Taglia Media','Cane Taglia Grande','Gatto'];
-export const treatmentOptions=['Bagno e Spazzolatura','Bagno + Taglio a forbice / Tosatura','Slanatura Sottopelo','Prima Toelettatura Cucciolo','Taglio Unghie e Igiene'];
-export function bookingMessage(pet,treatment){return 'Ciao Lulù! Vorrei chiedere informazioni e disponibilità per il mio '+pet+' per un trattamento di '+treatment+'. Grazie!'}
+export const treatmentOptions=['Bagno e Spazzolatura','Bagno + Taglio / Riassetto','Cura del Mantello','Prima Toelettatura Cucciolo','Taglio Unghie e Igiene'];
+export function bookingMessage(pet,treatment){return 'Ciao Marta! Vorrei chiedere informazioni e disponibilità da Scodinzolindo per il mio '+pet+' per un trattamento di '+treatment+'. Grazie!'}
 export function bookingHref(pet,treatment){return business.whatsapp+'?text='+encodeURIComponent(bookingMessage(pet,treatment))}
